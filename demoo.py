@@ -1,32 +1,27 @@
 """
-Simple calculator module following pylint standards.
+Simple Python module for pylint validation.
 """
 
 
-def add_numbers(first_number: int, second_number: int) -> int:
+def greet_user(name: str) -> str:
     """
-    Add two numbers and return the result.
+    Return greeting message.
 
     Args:
-        first_number: First integer value
-        second_number: Second integer value
+        name: Name of the user
 
     Returns:
-        Sum of both integers
+        Greeting string
     """
-    return first_number + second_number
+    return f"Hello, {name}"
 
 
 def main():
     """
-    Main function to execute the program.
+    Main execution function.
     """
-    number_one = 10
-    number_two = 20
-
-    result = add_numbers(number_one, number_two)
-
-    print(f"Addition Result: {result}")
+    message = greet_user("Rohit")
+    print(message)
 
 
 if __name__ == "__main__":
